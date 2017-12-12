@@ -22,8 +22,8 @@ class Route {
    return horizontal + vertical;
    }
    estimatedTime(peak){
-     if (peak === undefined  )
-      return this.blocksTravelled() / 3;
+     if (peak === undefined) {
+      return this.blocksTravelled() / 3;}
       else {
         return this.blocksTravelled( ) / 2;
       }
