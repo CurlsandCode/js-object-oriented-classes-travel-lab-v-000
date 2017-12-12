@@ -4,10 +4,9 @@ class Driver {
     this.name = name;
     this.startDate = new Date (startDate);
   }
-  yearsExperienceFromBeginningOf() {
-    constructor(endDate){
+  yearsExperienceFromBeginningOf(endDate){
       this.endDate = new Date(endDate);
-    } return endDate.getYear() - startDate.getYear();
+    return endDate.getYear() - startDate.getYear();
   }
-  
+
 }
