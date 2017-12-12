@@ -21,5 +21,12 @@ class Route {
    const horizontal = eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal);
    return horizontal + vertical;
    }
-   
+   estimatedTime(peak){
+     if (peak === undefined  )
+      return this.blocksTravelled() / 3;
+      else {
+        return this.blocksTravelled( ) / 2;
+      }
+   }
+
 }
